@@ -1,12 +1,12 @@
 composer require telegram-bot/api
 
 <?php
-require 'vendor/autoload.php';
+require 'bot.php';
 
 use Telegram\Bot\Api;
 
 $telegram = new Api('6185732150:AAGcIS8J8Khdn8BqoWmou814Vu7GLO8gmB0');
-$chatId = '707113645'; // آیدی عددی کاربر مورد نظر را وارد کنید
+$chatId = '707113645'; // 
 
 $message = 'Hello, World!'; // متن پیام را وارد کنید
 
