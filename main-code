@@ -5,7 +5,7 @@ require 'vendor/autoload.php';
 
 use Telegram\Bot\Api;
 
-$telegram = new Api('YOUR_BOT_TOKEN');
+$telegram = new Api('6185732150:AAGcIS8J8Khdn8BqoWmou814Vu7GLO8gmB0');
 $chatId = '707113645'; // آیدی عددی کاربر مورد نظر را وارد کنید
 
 $message = 'Hello, World!'; // متن پیام را وارد کنید
