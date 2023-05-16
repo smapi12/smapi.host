@@ -1,1 +1,23 @@
+composer require telegram-bot/api
 
+<?php
+require 'vendor/autoload.php';
+
+use Telegram\Bot\Api;
+
+$telegram = new Api('YOUR_BOT_TOKEN');
+$chatId = '707113645'; // آیدی عددی کاربر مورد نظر را وارد کنید
+
+$message = 'Hello, World!'; // متن پیام را وارد کنید
+
+$response = $telegram->sendMessage([
+    'chat_id' => $chatId,
+    'text' => $message
+]);
+
+if ($response->isOk()) {
+    echo 'Message sent successfully!';
+} else {
+    echo 'Error: ' . $response->getDescription();
+}
+?>
